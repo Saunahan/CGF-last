@@ -1,0 +1,485 @@
+/* Global Styles */
+body {
+    background: rgb(238,238,233);
+    background: linear-gradient(180deg, rgba(238,238,233,1) 4%, rgba(250,250,250,1) 14%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+button {
+    background-color: #1F2C35;
+    border: none;
+    border-radius: 35px;
+    color: #FAFAFA;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #091721;
+}
+
+/* Header */
+header {
+    align-items: center;
+    background-color: #EEEEE9;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header .logo {
+    color: #1F2C35;
+    font-size: 24px;
+    font-weight: bold;
+	
+	
+}
+	
+
+header nav {
+    display: inline;
+    font-size: 20px;
+    gap: 15px;
+    text-align: center;
+}
+
+header nav a {
+    color: #091721;
+    text-align: center;
+    text-decoration: none;
+}
+
+header nav a.active {
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+	color: #091721;
+	padding-left: 12%;
+    padding-right: 12%;
+	padding-bottom: 25px
+	
+	
+}
+
+.hero img {
+    height: auto;
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+.hero-description {
+	max-width: 800px;
+	margin: 0 auto; 
+	text-align: center;
+    margin-bottom: 25px;
+	color: #091721;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1F2C35;
+    color: #EEEEE9;
+    margin-top: 50px;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 100px;
+    justify-content: space-evenly;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-right ul li a {
+    color: #EEEEE9;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: #EEEEE9;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    font-size: 24px;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.gallery-item {
+    align-items: center;
+    background-color: #EEEEE9;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px
+}
+
+.gallery-item img {
+    border-radius: 20px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 100%;
+    transition: box-shadow 0.2s ease-in-out; /* Add transition for smooth shadow effect */
+}
+
+.gallery-item img:hover {
+    box-shadow: 0px 4px 15px #8D8D8D ; /* Add box-shadow on hover */
+}
+
+
+
+.description {
+    color: #1F2C35;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Form */
+.form-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+form {
+    background-color: #EEEEE9;
+    border-radius: 35px;
+    max-width: 800px;
+    padding: 40px;
+    width: 80%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #EEEEE9;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1F2C35;
+}
+
+.form-group label {
+    color: #1F2C35;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+form button {
+    background-color: #1F2C35;
+    border: none;
+    border-radius: 35px;
+    color: #FAFAFA;
+    cursor: pointer;
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #091721;
+}
+
+/* Responsive Styles */
+@media (max-width: 855px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    footer .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+	
+	.footer-center {
+        order: -1;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+		padding-left: 3%;
+        padding-right: 3%;
+    }
+	.header-social {
+	    display: none;
+	}
+	hero {
+    text-align: center;
+	padding-left: 3%;
+    padding-right: 3%;
+	}
+	.footer-description {
+		display: none;
+	}
+}
+
+@media (max-width: 440px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-center {
+        order: -1;
+    }
+
+    .footer-center img {
+        height: auto;
+        width: 270px;
+    }
+
+    .footer-center p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+	.header-social {
+	    display: none;
+	}
+	hero {
+    text-align: center;
+	padding-left: 0%;
+    padding-right: 0%;
+	}
+	
+}
+
+/* Additional Styles */
+.caption {
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-top: 4px;
+}
+
+.copy {
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: center;
+}
+ 
+ /* Happy Pets Section */
+
+.adopt {
+    text-align: center;
+    background-color: #EEEEE9;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    font-weight: bold;
+	color: #1F2C35
+}
+
+.happy-pets {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+	
+}
+
+.happy-pet {
+    flex: 1;
+    align-items: center;
+    background-color: #EEEEE9;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.happy-pet:hover {
+    transform: scale(1.02);
+}
+
+.happy-pet img {
+    border-radius: 20px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.happy-pet p {
+    color: #1F2C35;
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Split */
+
+.split-container { 
+    display: flex; 
+    width: 100%; 
+    height: 95%; 
+    background-color: transparent;
+	margin-bottom: 30px;
+} 
+
+.split-left, 
+.split-right { 
+    flex: 1; 
+    overflow: hidden; 
+    text-align: center; 
+    transition: all 0.3s; 
+    border-radius: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 5px; 
+	background: rgba(0, 0, 0, 0.8);
+} 
+
+.split-left { 
+    background-color: #1F2C35;
+    color: #EEEEE9;
+    margin-top: 50px;
+    padding: 30px 20px;
+    border-radius: 35px; 
+	
+    
+} 
+
+.split-left .logo {
+    margin-bottom: 19px;
+}
+
+.split-left h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 18px 0;
+}
+
+.split-left p {
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+.split-right { 
+    position: relative;
+    text-align: center;
+    color: #091721;
+    margin-top: 50px;
+    padding: 30px 20px;
+    border-radius: 35px; 
+    background-image: url('Pic5.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+     
+	}
+	
+
+.split-right:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.split-right h2 {
+    font-size: 2.0em;
+    font-weight: bold;
+}
+
+.split-right p {
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.split-right li {
+    text-align: center;
+    list-style-position: inside;
+    font-size: 1.4em;
+    font-weight: bold;
+}
