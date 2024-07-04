@@ -444,7 +444,7 @@ form button:hover {
 .split-right { 
     position: relative;
     text-align: center;
-    color: rgb(255,255,255);
+    color: #EEEEE9;
     margin-top: 50px;
     padding: 30px 20px;
     border-radius: 35px; 
