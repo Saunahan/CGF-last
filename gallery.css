@@ -498,8 +498,8 @@ form button:hover {
     }
 
     .split-left, .split-right {
-        margin: 20px;
-	padding: 40px;
+        margin: 2px;
+	
     }
 
     .split-right {
