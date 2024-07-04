@@ -416,10 +416,7 @@ form button:hover {
     align-items: center; 
     margin: 5px; 
 	background: rgba(0, 0, 0, 0.8);
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 20px 20px 20px 20px;
 } 
 
 .split-left { 
