@@ -498,7 +498,7 @@ form button:hover {
     }
 
     .split-left, .split-right {
-        margin: 0;
+        margin: 20px;
     }
 
     .split-right {
