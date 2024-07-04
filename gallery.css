@@ -400,6 +400,7 @@ form button:hover {
     height: 95%; 
     background-color: transparent;
 	margin-bottom: 30px;
+	flex-wrap: wrap;
 } 
 
 .split-left, 
