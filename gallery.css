@@ -400,7 +400,7 @@ form button:hover {
     height: 95%; 
     background-color: transparent;
 	margin-bottom: 30px;
-	flex-wrap: wrap;
+
 } 
 
 .split-left, 
@@ -425,7 +425,6 @@ form button:hover {
     padding: 30px 20px;
     border-radius: 35px; 
 	
-    
 } 
 
 .split-left .logo {
@@ -490,22 +489,7 @@ form button:hover {
         flex-wrap: wrap;
     }
 
-    .split-container {
-        flex-direction: column;
-    }
-
-    .split-left, .split-right {
-        margin: 0;
-    }
-
-    .split-right {
-        background-image: none;
-        background-color: #1F2C35;
-    }
-
-    .split-right:before {
-        content: none;
-    }
+    
 
 img.responsive-img {
     max-width: 100%;
