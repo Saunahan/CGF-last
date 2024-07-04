@@ -357,7 +357,7 @@ form button:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
-	
+	  flex-wrap: wrap;	
 }
 
 .happy-pet {
@@ -444,13 +444,14 @@ form button:hover {
 .split-right { 
     position: relative;
     text-align: center;
-    color: #091721;
+    color: rgb(255,255,255);
     margin-top: 50px;
     padding: 30px 20px;
     border-radius: 35px; 
     background-image: url('Pic5.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
      
 	}
@@ -482,4 +483,32 @@ form button:hover {
     list-style-position: inside;
     font-size: 1.4em;
     font-weight: bold;
+}
+
+ .happy-pets {
+        flex-wrap: wrap;
+    }
+
+    .split-container {
+        flex-direction: column;
+    }
+
+    .split-left, .split-right {
+        margin: 0;
+    }
+
+    .split-right {
+        background-image: none;
+        background-color: #1F2C35;
+    }
+
+    .split-right:before {
+        content: none;
+    }
+
+img.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
 }
